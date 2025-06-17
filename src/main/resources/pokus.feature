@@ -10,6 +10,7 @@ Feature: pokus
     And dalsie overenie vysledku
 
 
+
     Scenario: Pokusny test 2
       Given nastavenie pociatocnych podmienok
       When toto je dalsia akce
