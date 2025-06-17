@@ -15,3 +15,10 @@ Feature: pokus
       Given nastavenie pociatocnych podmienok
       When toto je dalsia akce
       Then dalsie overenie vysledku
+
+
+
+      Scenario: Kalkulacka - sucet dvoch cisel
+        Given Uzivatel ma zadane dve cisla 5 a 8
+        When Uzivatel spocita tieto dve cisla
+        Then Uzivatel vidi vysledok 13
