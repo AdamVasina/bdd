@@ -16,5 +16,14 @@ Feature: Bank
       | 1000           | 500            | 1000           | 1500            |
 
 
+      Scenario: Multiple Bank account transfer
+        Given Bank account with 1000 eur
+        And Another Bank account with 2000 eur
+        When A user transfer from first bank account to second one 500 eur
+        Then A user account balance is 500 eur
+        And A user second account balance is 2500 eur
+
+
+
 
 
