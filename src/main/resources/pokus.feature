@@ -22,3 +22,22 @@ Feature: pokus
         Given Uzivatel ma zadane dve cisla 5 a 8
         When Uzivatel spocita tieto dve cisla
         Then Uzivatel vidi vysledok 13
+
+
+        Scenario: Kalkulacka - delenie dvoch cisiel
+          Given Uzivatel ma zadane dve cisla 15 a 5
+          When Uzivatel vydeli tieto dve cisla
+          Then Uzivatel vidi vysledok 3
+
+          Scenario Outline: Kalkulacka - scitanie viac scenarov
+            Given Uzivatel ma zadane dve cisla <prveCislo> a <druheCislo>
+            When Uzivatel spocita tieto dve cisla
+            Then Uzivatel vidi vysledok <vysledok>
+
+            Examples:
+            | prveCislo | druheCislo | vysledok |
+            | 120       | 24         | 144      |
+            | 1011      | 10         | 1021     |
+            | 0         | -24        | -24      |
+
+

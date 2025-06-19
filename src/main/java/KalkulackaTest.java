@@ -29,4 +29,9 @@ public class KalkulackaTest {
 
 
     }
+
+    @When("Uzivatel vydeli tieto dve cisla")
+    public void uzivatelVydeliTietoDveCisla() {
+        vypocitanyVysledok = prvCislo / druCislo;
+    }
 }
